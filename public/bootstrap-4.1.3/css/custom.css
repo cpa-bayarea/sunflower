@@ -1,0 +1,12 @@
+#mainNav {
+    background-color: #212529;
+}
+
+.jonas{
+    color: white;
+    background-color: #212529;
+}
+
+.jonas:hover{
+    color: yellow;
+}
