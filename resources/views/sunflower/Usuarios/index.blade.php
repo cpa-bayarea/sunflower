@@ -3,7 +3,7 @@
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Usuários</h2>
-            <div class="container-fluid" style="overflow-y: hidden; overflow-x: visible;">
+            <div class="container-fluid">
                 <table class="table table-bordered table-sm table-striped" id="table">
                     <thead>
                     <tr>

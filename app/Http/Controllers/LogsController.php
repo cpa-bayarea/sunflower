@@ -3,59 +3,51 @@
 namespace App\Http\Controllers;
 
 use App\Models\Log;
-use App\Models\Postagens;
 use Illuminate\Http\Request;
 
-class PostagensController extends Controller
-{
+class LogsController extends Controller{
+
     /**
      * Display a listing of the resource.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $postagens = Postagens::all();
-        return view('sunflower.Postagens.index',compact('postagens'));
+        try{
+            $logs = Log::query()->select(['Logs.*','users.name'])->select()
+                ->join('users','users.id','Logs.USUARIO')
+                ->get();
+        }
+
+        catch (\Exception $e) {
+            report($e);
+        }
+
+        return view('sunflower.Logs.index',compact('logs'));
     }
 
     /**
      * Show the form for creating a new resource.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        try {
-            return view('sunflower.Postagens.form');
-        }
-        catch (\Exception $e) {
-            report($e);
-        }
+        //
     }
 
     /**
      * Store a newly created resource in storage.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        $postagem = new Postagens();
-
-        $postagem->TEXTO = $request->TEXTO;
-        $postagem->SECAO = $request->SECAO;
-        $postagem->DATA = date("Y-m-d H:i:s");
-        $postagem->save();
-
-        $log = new Log();
-        $log->USUARIO = auth()->user()->id;
-        $log->NATUREZA = 'NOVA PUBLICAÇÃO NO SITE';
-
-        return response()->route('postagens.index');
+        //
     }
 
     /**
      * Display the specified resource.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -65,7 +57,7 @@ class PostagensController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -75,7 +67,7 @@ class PostagensController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -86,7 +78,7 @@ class PostagensController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @author Gilson vieira Castro Júnior <castrok@live.com>
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
