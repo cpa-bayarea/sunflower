@@ -10,3 +10,8 @@
 .jonas:hover{
     color: yellow;
 }
+
+.tablesContainer{
+/*    overflow-y: hidden;
+    overflow-x: visible;*/
+}

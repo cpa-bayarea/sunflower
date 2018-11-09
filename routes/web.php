@@ -25,6 +25,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('postagens','PostagensController'); //#Postagens
 
+    Route::resource('logs','LogsController'); //#Logs
+
     Route::get('/home', 'HomeController@index')->name('home'); #NÃO MEXA NESSE GATO!
 
 });

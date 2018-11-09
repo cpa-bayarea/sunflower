@@ -96,7 +96,7 @@ a.article:hover {
     width: calc(100% - 250px);
     padding: 40px;
     min-height: 100vh;
-    transition: all 0.3s;
+    transition: all 0.5s;
     position: absolute;
     right: 0;
     top: 70px;
