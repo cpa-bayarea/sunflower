@@ -14,8 +14,8 @@ class LogsController extends Controller{
      */
     public function index(){
         try{
-            $logs = Log::query()->select(['Logs.*','users.name'])->select()
-                ->join('users','users.id','Logs.USUARIO')
+            $logs = Log::query()->select(['Log.*','users.name'])->select()
+                ->join('users','users.id','Log.USUARIO')
                 ->get();
         }
 
@@ -23,7 +23,7 @@ class LogsController extends Controller{
             report($e);
         }
 
-        return view('sunflower.Logs.index',compact('logs'));
+        return view('sunflower.Log.index',compact('logs'));
     }
 
     /**

@@ -125,10 +125,10 @@ return [
 
         'soft_deletes' => true,
 
-        // 'soft_deletes' => [
-        //     'enabled' => true,
-        //     'field' => 'deleted_at',
-        // ],
+//        'soft_deletes' => [
+//            'enabled' => true,
+//            'field' => 'deleted_at',
+//        ],
 
         /*
         |--------------------------------------------------------------------------
@@ -170,7 +170,7 @@ return [
         |
         */
 
-        'base_files' => false,
+        'base_files' => true,
 
         /*
         |--------------------------------------------------------------------------

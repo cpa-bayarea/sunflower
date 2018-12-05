@@ -2,37 +2,38 @@
 
 /**
  * Created by Reliese Model.
- * Date: Tue, 06 Nov 2018 23:25:06 +0000.
+ * Date: Fri, 23 Nov 2018 21:14:34 +0000.
  */
 
-namespace App\Models;
+namespace App\Models\Base;
 
 use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
- * Class UsersPostagen
+ * Class UsersBlog
  * 
  * @property int $ID_USER
- * @property int $ID_POSTAGENS
+ * @property int $ID_BLOG
  * 
- * @property \App\Models\Postagen $postagen
+ * @property \App\Models\Blog $blog
  * @property \App\Models\User $user
  *
- * @package App\Models
+ * @package App\Models\Base
  */
-class UsersPostagens extends Eloquent
+class UsersBlog extends Eloquent
 {
+	protected $table = 'users_blog';
 	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [
 		'ID_USER' => 'int',
-		'ID_POSTAGENS' => 'int'
+		'ID_BLOG' => 'int'
 	];
 
-	public function postagen()
+	public function blog()
 	{
-		return $this->belongsTo(\App\Models\Postagen::class, 'ID_POSTAGENS');
+		return $this->belongsTo(\App\Models\Blog::class, 'ID_BLOG');
 	}
 
 	public function user()

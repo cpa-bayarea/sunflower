@@ -10,10 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', function () { return view('index'); });
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -23,16 +22,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('usuarios','UsuariosController'); //#Usuários
 
-    Route::resource('postagens','PostagensController'); //#Postagens
+    Route::resource('postagens','PostagensController'); //#Postagem
 
-    Route::resource('logs','LogsController'); //#Logs
-
-    Route::get('/home', 'HomeController@index')->name('home'); #NÃO MEXA NESSE GATO!
-
+    Route::resource('logs','LogsController'); //#Log
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();

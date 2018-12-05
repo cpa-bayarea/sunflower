@@ -65,6 +65,14 @@
         <div class="intro-text">
             <div class="intro-lead-in">Bem vindo ao</div>
             <div class="intro-heading text-uppercase">Cantinho do Girassol</div>
+
+            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+                <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                <input type="hidden" name="currency" value="BRL">
+                <input type="hidden" name="receiverEmail" value="doacoes@cantinhodogirassol.com.br">
+                <input type="hidden" name="iot" value="button">
+                <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+            </form>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">O cantinho</a>
         </div>
     </div>

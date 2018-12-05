@@ -16,12 +16,10 @@ Projeto destinado à criação de um novo site para o Centro Social Luterano Can
 
 # Tecnologias
 
-* [PHP 7.*](http://php.net/)
+* [PHP 7.2](http://php.net/)
 * [Laravel 5.7](https://laravel.com/docs/5.7) 
-* [Bootstrap 4.*](https://getbootstrap.com/docs/4.1/getting-started/download/)
+* [Bootstrap 4.0](https://getbootstrap.com/docs/4.1/getting-started/download/)
 * [MySql 5.7](https://www.mysql.com/)
-* [Composer](https://getcomposer.org/download/)
-* [Git](https://git-scm.com/download/win)
 
 # Instruções de instalação das dependências do projeto
 
@@ -30,7 +28,6 @@ Projeto destinado à criação de um novo site para o Centro Social Luterano Can
 ```
 $ git clone https://github.com/cpa-bayarea/sunflower.git
 $ cd sunflower
-$ mv env-exemple.env .env
 $ composer update
 $ php artisan key:generate
 $ php artisan serve
@@ -38,15 +35,9 @@ $ php artisan serve
 
 * O resultado esperado após a execução do ultimo comando é algo semelhante a <i><b>Laravel development server started: http://127.0.0.1:8000</b></i>
 
-* Caso tenha exito nos passos descritos acima, o projeto já pode ser visualizado através link do ultimo comando Ex: <i><b>http://127.0.0.1:8000</b></i>
-  
-
-<h1>O tal do MVC...</h1>
-
-* <b>Sunflower\resources\views\ </b> - Onde ficam as views do projeto -> FRONT END 
-
-* <b>Sunflower\app\Http\Controllers\ </b> -> Onde ficam as controllers do projeto -> BACK END C
-
-* <b>Sunflower\public\ </b> - onde ficam os arquivos .js .css imagens etc, e o bootstrap.
+  <h1>MVC...</h1>
+* <b>Sunflower/resources/views/sunflower/</b> - Onde ficam as views
+* <b>Sunflower/app/Http/Controllers/</b> -> Onde ficam as Controllers
+* <b>Sunflower/app/Models/</b> -> Onde ficam as Models
 
 Autores [aqui](docs/AUTHORS.md) para visualizar.

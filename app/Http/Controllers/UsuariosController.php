@@ -12,8 +12,14 @@ class UsuariosController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(){
+        if (auth()->user()->user_status != 1){
+            auth()->logout();
+            return redirect('login');
+
+        }
+
         $usuarios = User::all();
-        return view('sunflower.Usuarios.index',compact('usuarios'));
+        return view('sunflower.Usuario.index',compact('usuarios'));
     }
 
     /**
@@ -30,7 +36,7 @@ class UsuariosController extends Controller{
             report($e);
         }
 
-        return view('sunflower.Usuarios.form', compact('usuarios'));
+        return view('sunflower.Usuario.form', compact('usuarios'));
     }
 
     /**
@@ -81,7 +87,7 @@ class UsuariosController extends Controller{
             report($e);
         }
 
-        return view('sunflower.Usuarios.form', compact('usuarios'));
+        return view('sunflower.Usuario.form', compact('usuarios'));
     }
 
     /**

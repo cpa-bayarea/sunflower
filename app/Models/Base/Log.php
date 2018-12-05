@@ -2,36 +2,31 @@
 
 /**
  * Created by Reliese Model.
- * Date: Tue, 06 Nov 2018 22:11:12 +0000.
+ * Date: Fri, 23 Nov 2018 21:14:34 +0000.
  */
 
-namespace App\Models;
+namespace App\Models\Base;
 
 use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
- * Class Postagen
+ * Class Log
  * 
  * @property int $ID
- * @property string $TEXTO
+ * @property string $NATUREZA
  * @property int $USUARIO
  * 
  * @property \App\Models\User $user
  *
- * @package App\Models
+ * @package App\Models\Base
  */
-class Postagens extends Eloquent
+class Log extends Eloquent
 {
 	protected $primaryKey = 'ID';
 	public $timestamps = false;
 
 	protected $casts = [
 		'USUARIO' => 'int'
-	];
-
-	protected $fillable = [
-		'TEXTO',
-		'USUARIO'
 	];
 
 	public function user()

@@ -3,19 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\Log;
-use App\Models\Postagens;
+use App\Models\Postagem;
 use Illuminate\Http\Request;
 
-class PostagensController extends Controller
-{
+class PostagensController extends Controller{
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $postagens = Postagens::all();
-        return view('sunflower.Postagens.index',compact('postagens'));
+        $postagens = Postagem::all();
+        return view('sunflower.Postagem.index',compact('postagens'));
     }
 
     /**
@@ -25,7 +24,7 @@ class PostagensController extends Controller
      */
     public function create(){
         try {
-            return view('sunflower.Postagens.form');
+            return view('sunflower.Postagem.form');
         }
         catch (\Exception $e) {
             report($e);
@@ -39,7 +38,7 @@ class PostagensController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        $postagem = new Postagens();
+        $postagem = new Postagem();
 
         $postagem->TEXTO = $request->TEXTO;
         $postagem->SECAO = $request->SECAO;

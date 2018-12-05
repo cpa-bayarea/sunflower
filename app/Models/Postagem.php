@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-class Blog extends \App\Models\Base\Blog
+class Postagem extends \App\Models\Base\Postagem
 {
 	protected $fillable = [
 		'TEXTO',
 		'DATA',
-		'TITULO'
+		'SECAO'
 	];
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt br">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +31,7 @@
     <link href="{{asset('bootstrap-4.1.3/css/fontawesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('bootstrap-4.1.3/css/sideBar.css')}}" rel="stylesheet">
     <link href="{{asset('bootstrap-4.1.3/css/custom.css')}}" rel="stylesheet">
+    <link href="{{asset('css/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
     {{--<link href="{{asset('bootstrap-4.1.3/css/summernote.css')}}" rel="stylesheet">--}}
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
@@ -117,6 +117,9 @@
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/bootstrap.bundle.min.js')}}" defer></script>
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/vendor/jquery-easing/jquery.easing.min.js')}}" defer></script>
 
+<script type="text/javascript" src="{{asset('js/DataTables/jquery.dataTables.min.js')}}" defer></script>
+<script type="text/javascript" src="{{asset('js/DataTables/dataTables.bootstrap4.min.js')}}" defer></script>
+
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/popover.js')}}" defer></script>
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/concat.js')}}" defer></script>
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/sidebar.js')}}" defer></script>
@@ -133,7 +136,7 @@
 
 <!-- Scripts que podemos mexer -->
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/sweetalert2.all.min.js')}}" defer></script>
-<script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/Usuarios/Usuarios.js')}}" defer></script>
+<script type="text/javascript" src="{{asset('Usuario')}}" defer></script>
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/fontawesome.min.js')}}" defer></script>
 <script type="text/javascript" src="{{asset('bootstrap-4.1.3/js/buscaCep.js')}}" defer></script>
 <script type="text/javascript" src="{{asset('js/userDelete.js')}}" defer></script>
