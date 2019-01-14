@@ -14,6 +14,10 @@ Auth::routes();
 
 Route::get('/', function () { return view('index'); });
 
+Route::get('/contas', 'ContasController@index'); //Prestação de contas
+Route::post('/contas', 'ContasController@upload')->name('uploadPdf');
+
+
 Route::group(['middleware' => 'auth'], function () {
 
     Route::group(['prefix' => 'usuarios'] ,function (){
@@ -25,4 +29,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('postagens','PostagensController'); //#Postagem
 
     Route::resource('logs','LogsController'); //#Log
+
+    
 });

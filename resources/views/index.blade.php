@@ -55,9 +55,8 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Agenda</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contas">Prestação de Conta</a>
-                </li>
+                
+                
             </ul>
         </div>
     </div>
