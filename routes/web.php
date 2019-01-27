@@ -16,6 +16,8 @@ Route::get('/', function () { return view('index'); });
 
 Route::get('/contas', 'ContasController@index'); //Prestação de contas
 Route::post('/contas', 'ContasController@upload')->name('uploadPdf');
+Route::get('/contas/{nome}', 'ContasController@download')->name('download'); 
+
 
 
 Route::group(['middleware' => 'auth'], function () {

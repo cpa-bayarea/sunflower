@@ -13,10 +13,14 @@
 
         <div>
             <h1>Listagem das categorias:</h1>
-        
+            
             @foreach ($pdfs as $pdf)
-                <p>Nome do arquivo: {{ $pdf['nome'] }}</p>
+        
+                <p>Nome do arquivo: {{ $nome = $pdf['nome'] }}</p>
+               <a href="{{ route('download', $nome)}}">download</a> 
+                
             @endforeach
+         
         </div>
     </body>
 </html>
