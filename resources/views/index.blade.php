@@ -47,13 +47,16 @@
                     <a class="nav-link js-scroll-trigger" href="#about">Quem somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#team">Doações</a>
+                    <a class="nav-link js-scroll-trigger" href="#team">Parceiros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="{{ route('uploadPdf') }}">Prestação de Contas</a>
                 </li>
                 
                 
@@ -73,9 +76,11 @@
                 <input type="hidden" name="currency" value="BRL">
                 <input type="hidden" name="receiverEmail" value="doacoes@cantinhodogirassol.com.br">
                 <input type="hidden" name="iot" value="button">
-                <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+               <!-- <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">!-->
+                <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">Fazer uma doação</button>
             </form>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">O cantinho</a>
+
+           <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">O cantinho</a>-->
         </div>
     </div>
 </header> <!-- Header -->
@@ -220,7 +225,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Quem somos</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">O Centro Social luterano Cantinho do Girassol é uma entidade filantrópica, de natureza privada, sem fins lucrativos, fundada em 16 de março de 1972, com sede na cidade de Ceilândia - Distrito Federal mantido pela Comunidade Evangélica de Confissão Luterana de Brasília - CECLB.</h3>
             </div
             >
         </div>
@@ -233,11 +238,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>-</h4>
+                                <h4 class="subheading">Berçário</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">0 Centro  Social luterano  Cantinho  do  Girassol  é  uma  entidade  filantrópica,  de  natureza privada,  sem  fins lucrativos, fundada em 16  de março de  1972, com  sede na cidade  de Ceilândia – Distrito  Federal mantido pela Comunidade Evangélica de Confissão Luterana de Brasília  – CECLB.</p>
                             </div>
                         </div>
                     </li>
@@ -247,11 +252,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4>-</h4>
+                                <h4 class="subheading">Educação Infantil</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Oferecer a criança à oportunidade de interagir com o meio escolar físico e social possibilitando os seus desenvolvimentos cognitivos, sociais e perceptivo motor, que a favoreça na obtenção de maior sucesso em sua alfabetização, diminuindo o risco futuro de evasão e repetência.</p>
                             </div>
                         </div>
                     </li>
@@ -261,11 +266,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4>-</h4>
+                                <h4 class="subheading">Serviço de Convivência e Fortalecimento de Vínculos</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Desenvolver atividades que oportunizem o protagonismo infanto-juvenil de forma transdisciplinar: desenvolvendo a ética, valores para a vida, meio ambiente, sexualidade, diversidade cultural, entre outros, através de palestras, debates, projetos, Esportes, atividades artísticas e informática.</p>
                             </div>
                         </div>
                     </li>
